@@ -1,7 +1,6 @@
-/* Import Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 
-/* General Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +14,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+
 header {
     background-color: #2a506b;
     color: #ffffff;
@@ -31,10 +30,10 @@ header h1 {
 }
 
 header h1 span {
-    color: #ffc107; /* Highlight color for name */
+    color: #ffc107;
 }
 
-/* Navigation */
+
 nav {
     background-color: #333;
     display: flex;
@@ -60,7 +59,7 @@ nav ul li a:hover {
     color: #ffc107;
 }
 
-/* Main Layout */
+
 main {
     max-width: 1200px;
     margin: 2rem auto;
@@ -73,7 +72,7 @@ main {
 main .card {
     margin-top: 1.5rem;}
 
-/* Card Section */
+
 .card {
     background-color: #ffffff;
     border-radius: 8px;
@@ -94,12 +93,12 @@ main .card {
     border-radius: 5px;
 }
 .card img {
-    width: 200px; /* Adjust the width as needed */
-    height: auto; /* Adjust the height as needed */
-    object-fit: cover; /* Ensures the image fills the area without distortion */
-    border-radius: 8px; /* Slightly rounded corners, similar to example */
-    margin: 0 auto 1rem; /* Centers the image in the container and adds bottom margin */
-    display: block; /* Centers the image */
+    width: 200px; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin: 0 auto 1rem; 
+    display: block; 
 }
 
 
@@ -117,7 +116,7 @@ main .card {
     text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
     background-color: #2a506b;
     color: #ffffff;
@@ -131,5 +130,5 @@ footer p {
 }
 
 footer p .highlight {
-    color: #ffc107; /* Color for date or highlighted text */
+    color: #ffc107; 
 }
