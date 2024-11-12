@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
-
+/* Main Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +12,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header Styles */
 header {
     background-color: #2a506b;
     color: #ffffff;
@@ -31,6 +31,7 @@ header h1 span {
     color: #ffc107;
 }
 
+/* Navigation Styles */
 nav {
     background-color: #333;
     display: flex;
@@ -56,6 +57,7 @@ nav ul li a:hover {
     color: #ffc107;
 }
 
+/* Main Section Styles */
 main {
     max-width: 1200px;
     margin: 2rem auto;
@@ -112,6 +114,7 @@ main .card {
     text-decoration: underline;
 }
 
+/* Footer Styles */
 footer {
     background-color: #2a506b;
     color: #ffffff;
