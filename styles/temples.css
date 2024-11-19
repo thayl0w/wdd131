@@ -1,4 +1,4 @@
-/* Basic mobile-first styles for the page */
+
 body {
     font-family: 'Arial', sans-serif; 
     margin: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #6A0DAD; /* Rich purple color */
+    background-color: #6A0DAD; 
 }
 
 li {
@@ -35,7 +35,7 @@ a {
 
 .navbar h1 {
     color: white;
-    font-size: 2.5em; /* Adjusted for emphasis */
+    font-size: 2.5em; 
 }
 
 .nav-menu {
@@ -61,7 +61,7 @@ a {
 }
 
 .nav-link:hover {
-    color: #FFD700; /* Gold for a pop of contrast */
+    color: #FFD700; 
 }
 
 .hamburger {
@@ -121,7 +121,7 @@ a {
         top: 0;
         height: 100vh;
         width: 100%;
-        background-color: #6A0DAD; /* Full-screen purple menu */
+        background-color: #6A0DAD;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -148,7 +148,7 @@ main {
 main h2 {
     text-align: center;
     font-size: 2.5em;
-    color: #6A0DAD; /* Purple header text */
+    color: #6A0DAD; 
     margin-bottom: 20px;
 }
 
@@ -166,7 +166,7 @@ figure {
     border-radius: 15px 150px;
     max-width: 100%;
     height: auto;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 
 figcaption {
@@ -178,7 +178,7 @@ figcaption {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #6A0DAD; /* Purple footer */
+    background-color: #6A0DAD;
     color: white;
 }
 
