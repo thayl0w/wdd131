@@ -1,42 +1,36 @@
-
-@media only screen and (min-width: 48rem) { 
+@media only screen and (min-width: 48rem) { /* For screens 48rem and wider */
     header h1 {
-        font-size: 3em; 
+        font-size: 3em; /* Increase font size for the header title */
     }
 
-    
     nav ul li {
-        margin-right: 30px;
+        margin-right: 30px; /* Add space between navigation items */
     }
 
     nav ul li a {
-        font-size: 1.5em; 
+        font-size: 1.5em; /* Increase navigation link font size */
     }
 
-   
     .gallery {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* Display 3 columns in the gallery */
     }
 
-   
     .rocorn {
-        max-width: 100%;
-        height: auto; 
+        max-width: 100%; /* Ensure images resize properly */
+        height: auto;
     }
 }
 
-@media only screen and (min-width: 64rem) { 
-    
+@media only screen and (min-width: 64rem) { /* For screens 64rem and wider */
     nav ul li {
-        margin-right: 40px;
+        margin-right: 40px; /* Add more space between navigation items */
     }
 
     nav ul li a {
-        font-size: 1.8em;
+        font-size: 1.8em; /* Further increase navigation link font size */
     }
 
-   
     .gallery {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); /* Display 4 columns in the gallery */
     }
 }
