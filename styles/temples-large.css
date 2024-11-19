@@ -1,14 +1,14 @@
-/* Larger screen (desktop/tablet) styles using a media query */
+/* Larger screen (desktop/tablet) styles using media queries */
 @media only screen and (min-width: 48rem) { /* 48rem = 768px */
     header h1 {
         font-size: 3em; /* Larger header text for bigger screens */
     }
 
-    nav ul li {
-        margin-right: 30px;
+    .nav-menu {
+        gap: 30px; /* Adjust gap for larger screens */
     }
 
-    nav ul li a {
+    .nav-link {
         font-size: 1.5em; /* Increase font size for links */
     }
 
@@ -22,11 +22,11 @@
 }
 
 @media only screen and (min-width: 64rem) { /* 64rem = 1024px */
-    nav ul li {
-        margin-right: 40px;
+    .nav-menu {
+        gap: 40px; /* Increase spacing */
     }
 
-    nav ul li a {
+    .nav-link {
         font-size: 1.8em; /* Further increase font size for large screens */
     }
 

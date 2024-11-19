@@ -23,6 +23,11 @@ li {
 a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease; /* Add smooth transition */
+}
+
+a:hover {
+    color: darkorange; /* Hover effect for all anchor tags */
 }
 
 .navbar {
@@ -58,12 +63,8 @@ a {
     font-size: 2rem;
 }
 
-.nav-link {
-    transition: 0.7s ease;
-}
-
 .nav-link:hover {
-    color: darkorange;
+    color: darkorange; /* Specific hover for nav links */
 }
 
 .hamburger {
@@ -100,7 +101,6 @@ a {
     left: 0; /* Aligns the bars to the left of the hamburger */
 }
 
-/* Center the bars */
 .bar:nth-child(1) {
     top: 0px; /* Position the first bar at the top */
 }
@@ -120,20 +120,20 @@ a {
 
     .nav-menu {
         position: fixed;
-        left: -100%;
+        left: -100%; /* Ensure the menu is hidden initially */
         top: 0;
-        height: 60;
+        height: 100vh; /* Full viewport height */
         background-color: #333;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        gap: 5px;
+        gap: 15px;
         transition: transform 0.3s ease;
         padding-top: 40px;
     }
 
     .nav-menu.active {
-        transform: translateX(100%);
+        transform: translateX(0); /* Make menu visible */
     }
 
     .nav-item {
