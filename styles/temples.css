@@ -136,6 +136,12 @@ a:hover {
         transform: translateX(0); /* Make menu visible */
     }
 
+    nav .nav-link:hover {
+        color: darkorange; /* Add hover effect */
+        text-decoration: underline; /* Optional for better visibility */
+    }
+    
+
     .nav-item {
         margin: 10px 0;
     }
