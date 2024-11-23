@@ -1,8 +1,7 @@
-/* Add this to the CSS file */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Oswald:wght@200..700&display=swap');
 
-:root {
+:root{
     --red-color: #c8102e;
     --green-color: #047857;
     --white-color: #ffffff;
