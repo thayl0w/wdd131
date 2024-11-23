@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Madagascar, its geography, culture, and weather conditions.">
+    <meta name="author" content="Mar Thayne Lowell Nacionales">
     <title>Madagascar</title>
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
@@ -17,7 +19,11 @@
     <main>
         <!-- Hero Section -->
         <section id="hero">
-            <img src="images/lemur.png" alt="Lemurs in Madagascar" class="hero-image">
+            <!-- Updated image to use a smaller size -->
+            <picture>
+                <source srcset="images/lemur.png" type="image/webp">
+                <img src="images/lemur.png" alt="Lemurs in Madagascar" class="hero-image">
+            </picture>
             <!-- Data Box -->
             <div class="info-box">
                 <h2>Data</h2>
@@ -36,7 +42,7 @@
                 <p><strong>Temperature:</strong> <span id="temperature">10 °C</span></p>
                 <p><strong>Conditions:</strong> Partly Cloudy</p>
                 <p><strong>Wind:</strong> <span id="windSpeed">5 km/h</span></p>
-                <p><strong>Wind Chill:</strong> <span id="windChill">9.8 °C</span></p>
+                <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
             </div>
         </section>
     </main>

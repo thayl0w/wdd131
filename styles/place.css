@@ -1,3 +1,7 @@
+/* Add this to the CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 :root {
     --red-color: #c8102e;
     --green-color: #047857;
