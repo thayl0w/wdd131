@@ -1,6 +1,6 @@
 /* Global Styles for Mobile */
 :root {
-    --bg-color: hsl(58, 100%, 62%); 
+    --bg-color: hsl(0, 100%, 62%); 
     --text-color: #fff;
     --font-family: 'Oswald', sans-serif;
     --accent-color: #fbc02d; /* Highlight color */
@@ -91,7 +91,7 @@ picture img {
 
 h1 {
     margin: 0.5rem ;
-    color: #ff3535;
+    color: #d5c5c5;
     font-size: 2.5em;
     text-transform: uppercase;
 }
