@@ -4,7 +4,12 @@
         background-color: #676363;
         color: #000;
     }
-
+    h1 {
+        margin: 0.5rem ;
+        color: #d8d2d2;
+        font-size: 2.5em;
+        text-transform: uppercase;
+    }
     header, footer {
         padding: 2em;
         background-color: #ff3d3d;
