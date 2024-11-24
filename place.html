@@ -3,63 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MadagascarS</title>
-    <meta name="description" content="Learn about Madagascar, its geography, culture, and weather conditions.">
+    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Mar Thayne Lowell Nacionales, This is a Place page">
     <meta name="author" content="Mar Thayne Lowell Nacionales">
-    <title>Madagascar</title>
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 600px)">
     <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="50">
-            <circle cx="50" cy="50" r="50" fill="#4caf50" />
-            <text x="50%" y="55%" fill="#fff" font-size="14" font-family="Arial" text-anchor="middle">
-            </text>
-        </svg>
-    <!-- Header -->
-    <header>
-        <h1>Madagascar</h1>
+        <h1>Welcome to the Philippines! 🇵🇭</h1>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <!-- Updated image to use a smaller size -->
+        <div class="image-container">
             <picture>
-                <source srcset="images/lemur.png" type="image/webp">
-                <img src="images/lemur.png" alt="Lemurs in Madagascar" class="hero-image">
+                <source srcset="images/pexels-chiecharon.WebP" media="(min-width: 600px)">
+                <img src="images/pexels-chiecharon.WebP" alt="View of a Japanese building and landscape">
             </picture>
-            <!-- Data Box -->
-            <div class="info-box">
-                <h2>Data</h2>
-                <p><strong>Area:</strong> 587,041 sq km</p>
-                <p><strong>Population:</strong> 27,691,018</p>
-                <p><strong>Capital:</strong> Antananarivo</p>
-                <p><strong>Languages:</strong> Malagasy, French</p>
-                <p><strong>Currency:</strong> Malagasy Ariary</p>
-                <p><strong>Time Zone:</strong> UTC+3</p>
-                <p><strong>Calling Code:</strong> +261</p>
-                <p><strong>Internet TLD:</strong> .mg</p>
-            </div>
-            <!-- Weather Box -->
-            <div class="info-box weather-box">
-                <h2>Weather</h2>
-                <p><strong>Temperature:</strong> <span id="temperature">10 °C</span></p>
-                <p><strong>Conditions:</strong> Partly Cloudy</p>
-                <p><strong>Wind:</strong> <span id="windSpeed">5 km/h</span></p>
-                <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
-            </div>
-        </section>
+
+            <section class="data">
+                <h2 class="data1">Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 343.45K km²</li>
+                    <li><strong>Population:</strong> 115.84 million (2024 estimate)</li>
+                    <li><strong>Capital:</strong> Manila</li>
+                    <li><strong>Languages:</strong> Tagalog</li>
+                    <li><strong>Currency:</strong> Philippine Peso</li>
+                    <li><strong>Time Zone:</strong> UTC+8</li>
+                    <li><strong>Calling Code:</strong> +63</li>
+                    <li><strong>Internet TLD:</strong> .ph</li>
+                </ul>
+            </section>
+
+            <section class="weather">
+                <h2 class="weather2">Weather<img class="weatherp" src="images/weather.svg" alt="Weather icon showing sun and clouds"></h2>
+                
+                <ul>
+                    <li><strong>Temperature:</strong> 37°C</li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> 5 km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+                </ul>
+            </section>
+        </div>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>
-            ©2024 🌺 Mar Thayne Lowell Nacionales 🌺 Madagascar <br>
-            Last Modification: <span id="lastModified"></span>
-        </p>
+        <p>&copy; 2024 Mar Thayne Lowell Nacionales | Philippines</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 </body>
 </html>

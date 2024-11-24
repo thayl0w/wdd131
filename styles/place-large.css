@@ -1,85 +1,43 @@
-/* General Body and Main Styling */
-body {
-    background-color: #fff; /* White background for wider view */
-    color: #000;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    position: relative; /* Ensure relative positioning for absolute elements */
-}
-
-header, footer {
-    text-align: center;
-    padding: 2em;
-    background-color: #e63232; /* Madagascar red */
-    color: #fff;
-}
-
-/* Hero Image */
-picture img {
-    width: 100%; /* Responsive image width */
-    display: block;
-    margin: 0 auto;
-}
-
-/* Weather Icon and Main Headings */
-.weather-icon {
-    font-size: 3em;
-    margin: 0.5em 0;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2em;
-    position: relative; /* Establish a context for absolute positioning */
-}
-
-/* Section Data (Upper Left) */
-.data1 {
-    background-color: rgba(230, 70, 70, 0.7); /* Semi-transparent red */
-    color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 10%; /* Position 10% from the top */
-    left: 10%; /* Position 10% from the left */
-    max-width: 300px; /* Restrict width */
-}
-
-/* Section Weather (Bottom Right) */
-.weather2 {
-    background-color: rgba(230, 70, 70, 0.7); /* Semi-transparent red */
-    color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    bottom: 10%; /* Position 10% from the bottom */
-    right: 10%; /* Position 10% from the right */
-    max-width: 300px; /* Restrict width */
-}
-
-/* General Section Styling */
-section {
-    padding: 1em;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* Media Query for Larger View */
+/* Larger View Styles */
 @media (min-width: 600px) {
-    .data1 {
-        top: 5%; /* Slight adjustment for larger screens */
-        left: 5%; /* Slight adjustment for larger screens */
+    body {
+        background-color: #676363;
+        color: #000;
     }
 
-    .weather2 {
-        bottom: 5%; /* Slight adjustment for larger screens */
-        right: 5%; /* Slight adjustment for larger screens */
+    header, footer {
+        padding: 2em;
+        background-color: #ff3d3d;
+        color: var(--text-color);
+    }
+
+    /* Main Styling */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2em;
+        position: relative;
+    }
+
+    /* Data Section */
+    .data {
+        position: absolute;
+        top: 10%;
+        left: 3%;
+        width: auto;
+        padding: 20px;
+    }
+
+    /* Weather Section */
+    .weather {
+        position: absolute;
+        bottom: 10%;
+        right: 3%;
+        width: auto;
+        padding: 20px;
+    }
+
+    h1::after {
+        display: inline; /* Show emoticon in wider view */
     }
 }

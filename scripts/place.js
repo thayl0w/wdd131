@@ -1,35 +1,27 @@
-// Wind chill calculation
-function calculateWindChill(temp, windSpeed) {
-    return (
+// script.js
+
+// Footer: Display the last modified date
+const lastModifiedElement = document.getElementById("last-modified");
+lastModifiedElement.textContent = document.lastModified;
+
+// Weather Wind Chill Calculation
+const tempC = 10; // Static temperature in °C
+const windSpeedKmH = 5; // Static wind speed in km/h
+
+// Function to calculate wind chill
+function calculateWindChill(temp, speed) {
+    return Math.round(
         13.12 +
         0.6215 * temp -
-        11.37 * Math.pow(windSpeed, 0.16) +
-        0.3965 * temp * Math.pow(windSpeed, 0.16)
-    ).toFixed(1);
+        11.37 * Math.pow(speed, 0.16) +
+        0.3965 * temp * Math.pow(speed, 0.16)
+    );
 }
 
-// Static weather data
-const temperature = 10; // °C
-const windSpeed = 5; // km/h
-
-// Display weather data
-function displayWeather() {
-    const windChill =
-        temperature <= 10 && windSpeed > 4.8
-            ? calculateWindChill(temperature, windSpeed)
-            : "N/A";
-
-    document.getElementById("temperature").textContent = `${temperature} °C`;
-    document.getElementById("windSpeed").textContent = `${windSpeed} km/h`;
-    document.getElementById("windChill").textContent = `${windChill} °C`;
+// Check if conditions are viable for wind chill calculation
+if (tempC <= 10 && windSpeedKmH > 4.8) {
+    const windChill = calculateWindChill(tempC, windSpeedKmH);
+    document.getElementById("windchill").textContent = `${windChill}°C`;
+} else {
+    document.getElementById("windchill").textContent = "N/A";
 }
-
-// Display footer with last modified date
-function updateFooter() {
-    const lastModified = document.lastModified;
-    document.getElementById("lastModified").textContent = lastModified;
-}
-
-// Initialize functions
-displayWeather();
-updateFooter();
