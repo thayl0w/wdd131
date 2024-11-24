@@ -1,6 +1,6 @@
 /* Global Styles for Mobile */
 :root {
-    --bg-color: #fffa63; /* Madagascar-inspired red */
+    --bg-color: #fff953; 
     --text-color: #fff;
     --font-family: 'Oswald', sans-serif;
     --accent-color: #fbc02d; /* Highlight color */
@@ -24,7 +24,7 @@ header, footer {
 main {
     position: relative;
     padding: 1em;
-    background-color: #fcff4a;
+    background-color: #363632;
     color: #000;
 }
 
