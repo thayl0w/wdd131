@@ -24,6 +24,12 @@
         position: relative;
     }
 
+    /* Hero Image */
+picture img {
+    width: 100%;
+    height: auto;
+}
+
     /* Data Section */
     .data {
         position: absolute;
