@@ -82,7 +82,7 @@ const temples = [
     dedicated: "1893, April, 6",
     area: 253000,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-utah/400x250/salt-lake-temple-winter-983529-wallpaper.jpg",
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/320x200/salt-lake-temple-37762.jpg",
   },
   {
     templeName: "Paris France",
@@ -90,7 +90,7 @@ const temples = [
     dedicated: "2017, May, 21",
     area: 44193,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris-france-temple-night-1202306-wallpaper.jpg",
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/2018/400x250/Paris-Temple02.jpg",
   },
   {
     templeName: "Johannesburg South Africa",
@@ -98,8 +98,33 @@ const temples = [
     dedicated: "1985, August, 24",
     area: 17000,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg_south_africa_temple.jpg",
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg",
   },
+  {
+    templeName: "Manila Philippines Temple",
+    location: "Quezon City Philippines",
+    dedicated: "1984, September, 25-27",
+    area:  26683,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/400x250/manila-philippines-temple-lds-993617-wallpaper.jpg",
+  },
+  {
+  templeName: "Cebu Philippines Temple",
+  location: "Cebu City Philippines",
+  dedicated: "2010, june, 13",
+  area:  29556,
+  imageUrl:
+  "https://content.churchofjesuschrist.org/acp/bc/Philippines/ORM-SEO/Temples%20in%20the%20Philippines/400x250/TempleIPHr1x1-1_01.png",
+  },
+
+  {
+    templeName: "Sapporo Japan Temple",
+    location: "Sapporo, Hokkaido Japan",
+    dedicated: "2021, August, 21",
+    area:  48480,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/sapporo-japan-exterior-day-1744806.jpg",
+  }
 ];
 
 function createTempleCards() {
