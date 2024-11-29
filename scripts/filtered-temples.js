@@ -109,12 +109,12 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/400x250/manila-philippines-temple-lds-993617-wallpaper.jpg",
   },
   {
-  templeName: "Cebu Philippines Temple",
-  location: "Cebu City Philippines",
-  dedicated: "2010, june, 13",
-  area:  29556,
+  templeName: "Seoul Korea Temple",
+  location: "Seoul-teukbyeolsi Korea",
+  dedicated: "1985, December, 14-15",
+  area:   28057 ,
   imageUrl:
-  "https://content.churchofjesuschrist.org/acp/bc/Philippines/ORM-SEO/Temples%20in%20the%20Philippines/400x250/TempleIPHr1x1-1_01.png",
+  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-424784-wallpaper.jpg",
   },
 
   {
