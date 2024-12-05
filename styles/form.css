@@ -34,10 +34,10 @@ input[type="text"],
 input[type="date"],
 select,
 textarea {
-    width: 90%;
+    width: 97%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #c1c1c1;
     border-radius: 4px;
     font-size: 14px;
 }
