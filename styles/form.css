@@ -20,7 +20,10 @@ main {
 
 h1 {
     text-align: center;
-    color: #4a4a7d;
+    color: #fff; /* White text color */
+    background-color: #4a4a7d; /* Background color for heading */
+    padding: 15px 0;
+    margin: 0;
 }
 
 /* Form Elements */
@@ -75,10 +78,11 @@ input[type="submit"]:hover {
     background-color: #3b3b65;
 }
 
-/* Footer */
 footer {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-    color: #777;
+    color: white; /* White text for footer */
+    background-color: #4a4a7d; /* Background color for footer */
+    padding: 10px 0;
 }
