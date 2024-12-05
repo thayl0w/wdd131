@@ -163,7 +163,6 @@ main h2 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
     margin: 20px 0;
-    visibility: visible; /* Ensure the grid is visible */
 }
 
 .res-grid section {
@@ -174,7 +173,6 @@ main h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    visibility: visible; /* Ensure individual sections are visible */
 }
 
 .res-grid section:hover {
