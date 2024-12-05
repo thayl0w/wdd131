@@ -20,8 +20,8 @@ main {
 
 h1 {
     text-align: center;
-    color: #fff; /* White text color */
-    background-color: #4a4a7d; /* Background color for heading */
+    color: #fff;
+    background-color: #4a4a7d; 
     padding: 15px 0;
     margin: 0;
 }
@@ -82,7 +82,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-    color: white; /* White text for footer */
-    background-color: #4a4a7d; /* Background color for footer */
+    color: white; 
+    background-color: #4a4a7d;
     padding: 10px 0;
 }
