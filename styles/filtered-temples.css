@@ -1,4 +1,3 @@
-/* Basic mobile-first styles for the page */
 body {
     font-family: 'Arial', sans-serif; 
     margin: 0;
@@ -23,7 +22,7 @@ li {
 a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease; /* Add smooth transition */
+    transition: color 0.3s ease; 
 }
 
 a:hover {
@@ -74,7 +73,7 @@ a:hover {
     width: 25px;
     height: 20px;
     cursor: pointer;
-    position: relative; /* Enables positioning of the bars */
+    position: relative; 
 }
 
 .hamburger.active .bar:nth-child(1) {
@@ -97,20 +96,20 @@ a:hover {
     height: 3px;
     background-color: white;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    position: absolute; /* Allows precise positioning of the bars */
-    left: 0; /* Aligns the bars to the left of the hamburger */
+    position: absolute;
+    left: 0; 
 }
 
 .bar:nth-child(1) {
-    top: 0px; /* Position the first bar at the top */
+    top: 0px; 
 }
 
 .bar:nth-child(2) {
-    top: 8px; /* Center the second bar */
+    top: 8px;
 }
 
 .bar:nth-child(3) {
-    top: 16px; /* Position the third bar near the bottom */
+    top: 16px; 
 }
 
 @media (max-width: 768px) {
@@ -120,9 +119,9 @@ a:hover {
 
     .nav-menu {
         position: fixed;
-        left: -100%; /* Ensure the menu is hidden initially */
+        left: -100%; 
         top: 0;
-        height: 100vh; /* Full viewport height */
+        height: 100vh; 
         background-color: #333;
         flex-direction: column;
         align-items: center;
@@ -133,12 +132,12 @@ a:hover {
     }
 
     .nav-menu.active {
-        transform: translateX(0); /* Make menu visible */
+        transform: translateX(0); 
     }
 
     nav .nav-link:hover {
         color: darkorange; /* Add hover effect */
-        text-decoration: underline; /* Optional for better visibility */
+        text-decoration: underline; 
     }
     
 
@@ -161,9 +160,10 @@ main h2 {
 
 .res-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic responsive layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
     margin: 20px 0;
+    visibility: visible; /* Ensure the grid is visible */
 }
 
 .res-grid section {
@@ -174,6 +174,7 @@ main h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    visibility: visible; /* Ensure individual sections are visible */
 }
 
 .res-grid section:hover {

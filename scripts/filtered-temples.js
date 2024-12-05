@@ -18,7 +18,6 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
 }));
-
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -103,16 +102,16 @@ const temples = [
   {
     templeName: "Manila Philippines Temple",
     location: "Quezon City Philippines",
-    dedicated: "1984, September, 25-27",
-    area:  26683,
+    dedicated: "1984, September, 27",
+    area: 26683,
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/400x250/manila-philippines-temple-lds-993617-wallpaper.jpg",
   },
   {
   templeName: "Seoul Korea Temple",
   location: "Seoul-teukbyeolsi Korea",
-  dedicated: "1985, December, 14-15",
-  area:   28057 ,
+  dedicated: "1985, December, 15",
+  area: 28057 ,
   imageUrl:
   "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-424784-wallpaper.jpg",
   },
@@ -121,45 +120,81 @@ const temples = [
     templeName: "Sapporo Japan Temple",
     location: "Sapporo, Hokkaido Japan",
     dedicated: "2021, August, 21",
-    area:  48480,
+    area: 48480,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/sapporo-japan-exterior-day-1744806.jpg",
   }
 ];
 
-function createTempleCards() {
+// Function to display all temples
+function renderTemples(filteredTemples) {
   const container = document.querySelector(".res-grid");
+  container.innerHTML = ""; // Clear existing content
 
-  temples.forEach((temple) => {
-    // Create card elements
-    const card = document.createElement("section");
-    const name = document.createElement("h3");
-    const location = document.createElement("p");
-    const dedication = document.createElement("p");
-    const area = document.createElement("p");
-    const img = document.createElement("img");
+  if (filteredTemples.length === 0) {
+      container.innerHTML = `<p>No temples match the selected filter.</p>`;
+      return;
+  }
 
-    // Set content and attributes
-    name.textContent = temple.templeName;
-    location.innerHTML = `<span class="label">Location: </span>${temple.location}`;
-    dedication.innerHTML = `<span class="label">Dedicated: </span>${temple.dedicated}`;
-    area.innerHTML = `<span class="label">Size: </span>${temple.area} sq ft`;
-    img.src = temple.imageUrl;
-    img.alt = `${temple.templeName} Temple`;
-    img.loading = "lazy";
+  filteredTemples.forEach(temple => {
+      const card = document.createElement("section");
+      card.classList.add("temple-card");
 
-    // Append elements to card
-    card.appendChild(name);
-    card.appendChild(location);
-    card.appendChild(dedication);
-    card.appendChild(area);
-    card.appendChild(img);
+      const name = document.createElement("h3");
+      name.textContent = temple.templeName;
 
-    // Append card to container
-    container.appendChild(card);
+      const location = document.createElement("p");
+      location.innerHTML = `<strong>Location:</strong> ${temple.location}`;
+
+      const dedication = document.createElement("p");
+      dedication.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
+
+      const area = document.createElement("p");
+      area.innerHTML = `<strong>Size:</strong> ${temple.area} sq ft`;
+
+      const img = document.createElement("img");
+      img.src = temple.imageUrl;
+      img.alt = `${temple.templeName} Temple`;
+      img.loading = "lazy";
+
+      card.appendChild(name);
+      card.appendChild(location);
+      card.appendChild(dedication);
+      card.appendChild(area);
+      card.appendChild(img);
+
+      container.appendChild(card);
   });
 }
 
-// Call function to populate the page
-createTempleCards();
-               
+// Function to filter temples based on criteria
+function filterTemples(criteria) {
+  let filteredTemples = temples;
+
+  switch (criteria) {
+      case "Old":
+          filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+          break;
+      case "New":
+          filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+          break;
+      case "Small":
+          filteredTemples = temples.filter(temple => parseInt(temple.area) < 10000);
+          break;
+      case "Large":
+          filteredTemples = temples.filter(temple => parseInt(temple.area) > 90000);
+          break;
+  }
+
+  renderTemples(filteredTemples);
+}
+
+// Attach event listeners to filter buttons
+document.getElementById("home").addEventListener("click", () => renderTemples(temples));
+document.getElementById("old").addEventListener("click", () => filterTemples("Old"));
+document.getElementById("new").addEventListener("click", () => filterTemples("New"));
+document.getElementById("small").addEventListener("click", () => filterTemples("Small"));
+document.getElementById("large").addEventListener("click", () => filterTemples("Large"));
+
+// Load all temples by default on page load
+window.addEventListener("DOMContentLoaded", () => renderTemples(temples));
