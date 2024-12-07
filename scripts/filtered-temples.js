@@ -8,10 +8,22 @@ document.getElementById('lastModified').textContent = 'Last modified: ' + docume
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  // Toggle Hamburger Menu
+  hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+  });
+
+  // Populate Current Year
+  document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+  // Populate Last Modified Date
+  document.getElementById("lastModified").textContent = `Last modified: ${document.lastModified}`;
+});;
 
 // Close the menu when a link is clicked
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
