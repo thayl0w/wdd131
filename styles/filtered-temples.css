@@ -136,7 +136,7 @@ footer {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
-    }
+    } 
 
     .nav-menu {
         position: fixed;
