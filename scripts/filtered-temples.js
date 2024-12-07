@@ -1,35 +1,29 @@
 // Update the current year in the footer
-document.getElementById('currentyear').textContent = new Date().getFullYear();
+document.getElementById("currentyear").textContent = new Date().getFullYear();
 
 // Update the last modified date in the footer
-document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
 
 // Hamburger menu functionality for mobile view
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
 
   // Toggle Hamburger Menu
   hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
   });
 
-  // Populate Current Year
-  document.getElementById("currentyear").textContent = new Date().getFullYear();
+  // Close the menu when a link is clicked
+  document.querySelectorAll(".nav-link").forEach((link) =>
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    })
+  );
+});
 
-  // Populate Last Modified Date
-  document.getElementById("lastModified").textContent = `Last modified: ${document.lastModified}`;
-});;
-
-// Close the menu when a link is clicked
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-}));
 
 const temples = [
   {
