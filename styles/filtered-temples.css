@@ -4,13 +4,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #a4cde6;
-    color: #333;
+    background-color: #a4d3f0;
+    color: #000000;
 }
 
 h1, h2 {
     text-align: center;
-    color: #444;
+    color: #1d1414;
     margin: 15px 0;
 }
 
