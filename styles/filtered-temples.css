@@ -116,6 +116,31 @@ a:hover {
     top: 16px;
 }
 
+/* Add styles for filter-buttons */
+.filter-buttons {
+    display: flex; /* Ensure buttons are aligned horizontally */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center; /* Center align the buttons */
+    gap: 10px; /* Space between buttons */
+    padding: 10px;
+    background-color: #fff; /* Optional: background for better visibility */
+    border-bottom: 1px solid #ddd; /* Optional: visual separation */
+}
+
+.filter-buttons button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
 /* Mobile View */
 @media (max-width: 768px) {
     .hamburger {
@@ -148,6 +173,17 @@ a:hover {
 
     .nav-item {
         margin: 10px 0;
+    }
+
+    .filter-buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center align stacked buttons */
+        padding: 15px; /* Increase padding for better spacing */
+    }
+
+    .filter-buttons button {
+        width: 80%; /* Make buttons wider for mobile */
+        max-width: 300px; /* Prevent buttons from getting too wide */
     }
 }
 
