@@ -1,8 +1,10 @@
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif; 
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 * {
@@ -22,13 +24,14 @@ li {
 a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 a:hover {
     color: darkorange; /* Hover effect for all anchor tags */
 }
 
+/* Navbar */
 .navbar {
     min-height: 70px;
     display: flex;
@@ -42,7 +45,7 @@ a:hover {
 }
 
 .nav-menu {
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
@@ -50,60 +53,23 @@ a:hover {
     transition: transform 0.3s ease;
 }
 
-
-.nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 0;
-    height: 100vh;
-    background-color: #333;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 15px;
-    transition: transform 0.3s ease;
-    padding-top: 40px;
-}
-
 .nav-menu.active {
-    transform: translateX(0); 
+    transform: translateX(0);
 }
 
 .nav-item {
-    margin: 10px 0;
-}
-
-.filter-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
     padding: 10px;
 }
 
-.filter-buttons button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%; 
-}
-
-.filter-buttons button:hover {
-    background-color: darkorange;
-}
-
-
-.filter-buttons button {
-    font-size: 1.2rem; 
-    padding: 12px;
+.nav-branding {
+    font-size: 2rem;
 }
 
 .nav-link:hover {
     color: darkorange; /* Specific hover for nav links */
 }
 
+/* Hamburger Menu */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -111,7 +77,7 @@ a:hover {
     width: 25px;
     height: 20px;
     cursor: pointer;
-    position: relative; 
+    position: relative;
 }
 
 .hamburger.active .bar:nth-child(1) {
@@ -135,11 +101,11 @@ a:hover {
     background-color: white;
     transition: transform 0.3s ease, opacity 0.3s ease;
     position: absolute;
-    left: 0; 
+    left: 0;
 }
 
 .bar:nth-child(1) {
-    top: 0px; 
+    top: 0px;
 }
 
 .bar:nth-child(2) {
@@ -147,9 +113,10 @@ a:hover {
 }
 
 .bar:nth-child(3) {
-    top: 16px; 
+    top: 16px;
 }
 
+/* Mobile View */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -157,9 +124,9 @@ a:hover {
 
     .nav-menu {
         position: fixed;
-        left: -100%; 
+        left: -100%;
         top: 0;
-        height: 100vh; 
+        height: 100vh;
         background-color: #333;
         flex-direction: column;
         align-items: center;
@@ -167,23 +134,24 @@ a:hover {
         gap: 15px;
         transition: transform 0.3s ease;
         padding-top: 40px;
+        width: 100%; /* Ensures the menu takes full screen width */
     }
 
     .nav-menu.active {
-        transform: translateX(0); 
+        transform: translateX(0);
     }
 
     nav .nav-link:hover {
-        color: darkorange; /* Add hover effect */
-        text-decoration: underline; 
+        color: darkorange;
+        text-decoration: underline;
     }
-    
 
     .nav-item {
         margin: 10px 0;
     }
 }
 
+/* Main Content */
 main {
     max-width: 100%;
     margin: 0 auto;
@@ -198,7 +166,7 @@ main h2 {
 
 .res-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin: 20px 0;
 }
@@ -242,6 +210,7 @@ main h2 {
     margin: 15px 0;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px 0;

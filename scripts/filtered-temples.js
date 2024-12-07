@@ -13,11 +13,12 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close the hamburger menu when a link is clicked
+// Close the menu when a link is clicked
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
 }));
+
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -173,16 +174,16 @@ function filterTemples(criteria) {
 
   switch (criteria) {
       case "Old":
-          filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+          filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() <2000,1900);
           break;
       case "New":
-          filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+          filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() >2000,2024);
           break;
       case "Small":
-          filteredTemples = temples.filter(temple => parseInt(temple.area) < 10000);
+          filteredTemples = temples.filter(temple => parseInt(temple.area) <30000,10000,)
           break;
       case "Large":
-          filteredTemples = temples.filter(temple => parseInt(temple.area) > 90000);
+          filteredTemples = temples.filter(temple => parseInt(temple.area) > 90000,30000);
           break;
   }
 
