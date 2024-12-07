@@ -3,19 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background-color: #c8e9fd;
-    color: #000000;
+    color: #000;
 }
 
 h1, h2 {
-    color: #2a2a2a; 
+    color: #2a2a2a;
 }
-
-.nav-item a:hover {
-    color: #03a9f4;
-}
-
 
 /* Navbar Styles */
 .navbar {
@@ -28,7 +22,6 @@ h1, h2 {
     position: sticky;
     top: 0;
     z-index: 1000;
-    text-align: center;
 }
 
 .nav-menu {
@@ -46,7 +39,11 @@ h1, h2 {
 }
 
 .nav-item a:hover {
-    color: #00bcd4;
+    color: #03a9f4;
+}
+
+a:focus, .nav-item a:focus {
+    outline: 3px dashed #00bcd4;
 }
 
 /* Hamburger Menu */
@@ -54,7 +51,6 @@ h1, h2 {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    z-index: 1100;
 }
 
 .hamburger .bar {
@@ -75,20 +71,12 @@ h1, h2 {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    transition: all 0.3s ease-in-out;
-}
-
-.nav-item {
-    margin: 10px 0;
+    transition: top 0.3s ease;
 }
 
 .nav-menu.active a {
     font-size: 1.5rem;
 }
-a:focus, .nav-item a:focus {
-    outline: 3px dashed #00bcd4;
-}
-
 
 /* Grid Layout */
 .res-grid {
@@ -100,31 +88,27 @@ a:focus, .nav-item a:focus {
 
 /* Temple Card Styles */
 .temple-card {
-    background-color: #ffffff;
-    border: 1px solid #000000;
+    background-color: #fff;
+    border: 1px solid #000;
     border-radius: 10px;
-    overflow: hidden;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 51, 255, 0.3); /* Reduce intensity */
-    transition: transform 0.2s ease; /* Shorten transition time */
+    box-shadow: 0 2px 4px rgba(0, 51, 255, 0.3);
+    transition: transform 0.2s ease;
 }
 
 .temple-card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(26, 22, 255, 0.15);
-    will-change: transform, box-shadow;
 }
 
 .temple-card img {
     width: 100%;
-    height: auto;
     border-bottom: 1px solid #ddd;
 }
 
 .temple-card h3 {
     font-size: 1.5rem;
     margin: 10px 0;
-    color: #000000;
 }
 
 .temple-card p {
@@ -144,19 +128,11 @@ footer {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
-    } 
+    }
 
     .nav-menu {
-        position: fixed;
         top: -100%;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(51, 51, 51, 0.95);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
         transition: top 0.3s ease;
     }
 
@@ -164,22 +140,8 @@ footer {
         top: 0;
     }
 
-    .nav-item {
-        margin: 10px 0;
-    }
-
-    .nav-menu a {
-        font-size: 1.5rem;
-        text-align: center;
-        color: #fff;
-    }
-
     .res-grid {
         grid-template-columns: 1fr;
         padding: 10px;
-    }
-
-    .temple-card {
-        margin: 0 auto;
     }
 }
